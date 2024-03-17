@@ -2181,6 +2181,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@os-team/i18next-react-native-language-detector@npm:^1.0.33":
+  version: 1.0.33
+  resolution: "@os-team/i18next-react-native-language-detector@npm:1.0.33"
+  peerDependencies:
+    i18next: "*"
+    react-native: "*"
+  checksum: 7127d187c1ae5311cfc79ca4c95e6af931b7a68bbf6f80506b0caae731428f4ce1a4698948248c4e9d6db87a6e63637a8a921d559257127bc4f3923bf43edd30
+  languageName: node
+  linkType: hard
+
 "@pkgjs/parseargs@npm:^0.11.0":
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
@@ -2954,6 +2964,7 @@ __metadata:
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
     "@gorhom/bottom-sheet": ^4
+    "@os-team/i18next-react-native-language-detector": ^1.0.33
     "@react-native/babel-preset": 0.73.21
     "@react-native/eslint-config": 0.73.2
     "@react-native/metro-config": 0.73.5
