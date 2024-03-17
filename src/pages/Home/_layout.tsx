@@ -27,6 +27,7 @@ const Home = () => {
         if (i18n.language != code) {
             i18n.changeLanguage(code)
         }
+        bottomSheetModalRef.current?.close();
     }
 
     return (
@@ -40,7 +41,7 @@ const Home = () => {
                     snapPoints={snapPoints}
                     onChange={handleSheetChanges}
                     containerStyle={styles.bottomSheetContainerBackground}
-                    
+
                 >
                     <BottomSheetView
                         style={styles.bottomSheetStyle}>
@@ -50,7 +51,9 @@ const Home = () => {
                             data={languages}
                             renderItem={({ item }) => (
                                 <TouchableOpacity
-                                    onPress={() => { handleOnPress(item.code) }}
+                                    onPress={() => {
+                                        handleOnPress(item.code);
+                                    }}
                                     style={styles.bottomSheetItemContainer}
                                 >
                                     <Text style={styles.bottomSheetItemTitle}>{item.name}</Text>
